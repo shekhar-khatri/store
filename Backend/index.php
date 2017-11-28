@@ -5,6 +5,10 @@
  * Date: 11/21/2017
  * Time: 1:07 PM
  */
+$info = "";
+if(isset($_GET['info'])){
+    $info = $_GET['info'];
+}
 ?>
 
 
@@ -18,6 +22,7 @@
     <title>Store </title>
 </head>
 <body>
+<?php echo $info; ?>
 <h1>Login</h1>
 <form action="login.php" method="POST" >
     <p>Username: </p>
